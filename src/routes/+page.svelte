@@ -56,22 +56,25 @@
     & h2{
       display: flex;
       justify-content: center;
+      align-items: center;
+      font-size: 5vh;
     }
   }
   .block-grid{
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 10px;
 
     & section{
-      height: 300px;
-      width: 300px;
+      height: 175px;
+      width: 175px;
       border-radius: 10px;
+      transition: 0.2s;
 
       &:hover{
         transform: scale(1.1);
-        transition: transform 0.5s;
         cursor: pointer;
       }
     }

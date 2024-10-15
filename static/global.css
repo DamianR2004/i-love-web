@@ -143,6 +143,10 @@ a{
         height: 80px;
         width: 80px;
       }
+
+      .block-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
   
     }
   }
