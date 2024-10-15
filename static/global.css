@@ -5,6 +5,10 @@ body{
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .homepage{
   display: flex;
   flex-direction: column;
@@ -35,6 +39,11 @@ body{
     grid-area: b;
     place-self: center;
     color: orange;
+  }
+
+  & svg{
+    height: 50px;
+    width: 50px;
   }
 
   & svg:hover{
@@ -109,7 +118,10 @@ a{
       height: 150px;
       width: 150px;
     }
-
+    .homepage-bottom svg{
+      height: 70px;
+      width: 70px;
+    }
   }
 
 }
@@ -123,8 +135,13 @@ a{
       }
   
       & .heart-svg{ 
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
+      }
+
+      .homepage-bottom svg{
+        height: 80px;
+        width: 80px;
       }
   
     }
